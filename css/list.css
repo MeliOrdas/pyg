@@ -1,0 +1,37 @@
+/* 列表页面css */
+.secKill {
+    position: absolute;
+    height: 32px;
+    top: 40px;
+    left: 185px;
+    border-left: 1px solid #b1191a;
+    padding: 5px 0 0 15px;
+}
+
+.secKill_list li {
+    line-height: 45px;
+    float: left;
+    margin: 0 30px;
+}
+
+.secKill_list li a {
+    font-size: 16px;
+    color: #000000;
+    font-weight: 600;
+}
+
+.secKill_list li a:hover {
+    color: #c81523;
+}
+
+.secKill_con li {
+    float: left;
+    line-height: 45px;
+    margin: 0 20px;
+}
+
+.secKill_con li a {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "icomoon";
+}
