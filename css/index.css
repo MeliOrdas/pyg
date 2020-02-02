@@ -194,7 +194,6 @@
 /* 推荐模块 */
 .recommend {
     height: 163px;
-    background-color: pink;
     margin-top: 10px;
 }
 
@@ -276,6 +275,98 @@
 }
 
 .box_bd {
-    height: 361px;
-    background-color: pink;
+    height: 360px;
+    position: relative;
+}
+
+.tab_con li {
+    height: 360px;
+    float: left;
+}
+
+.tab_con .m1 {
+    width: 211px;
+    background-color: #f9f9f9;
+}
+
+.tab_con .m2 {
+    width: 329px;
+    position: relative;
+}
+
+.tab_con .m3 {
+    width: 219px;
+    border-right: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.tab_con .dot {
+    position: absolute;
+    bottom: 10px;
+    left: 130px;
+}
+
+.dot li {
+    width: 8px;
+    height: 8px;
+    background: #251f1f;
+    float: left;
+    margin: 0 3px;
+    border: 2px solid #251f1f;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot .dot1 {
+    background: #fff;
+    border: 2px solid #ffffff;
+}
+
+.table_con_item {
+    border-bottom: 1px solid #ccc;
+}
+
+.tab_con_List {
+    margin-bottom: 15px;
+    /* overflow: hidden; */
+}
+
+.tab_con_List li {
+    width: 86px;
+    height: 36px;
+    line-height: 32px;
+    border-bottom: 1px solid #ccc;
+    margin-left: 10px;
+    text-align: center;
+}
+
+/* 电梯导航 */
+.fixed_tool {
+    width: 66px;
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    margin-left: -676px;
+    background-color: #fff;
+}
+
+.fixed_tool li {
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 12px;
+    border-bottom: 1px solid #ccc;
+}
+
+.fixed_tool .current {
+    background-color: #c81623;
+    color: #fff;
+}
+
+.tab_con li img {
+    transition: all 0.2s;
+}
+
+.tab_con li img:hover {
+    margin-left: 8px;
 }
