@@ -1,0 +1,51 @@
+/* Mobile detail start  */
+.detail_container {
+    margin-top: 20px;
+}
+
+.crumb_wrap {
+    height: 25px;
+}
+
+.crumb_wrap a {
+    margin-left: 7px;
+}
+
+.preview_wrap {
+    width: 400px;
+    height: 590px;
+}
+
+.preview_img {
+    height: 398px;
+    border: 1px solid #ccc;
+}
+
+.preview_list {
+    margin-top: 60px;
+    height: 60px;
+    /* background-color: skyblue; */
+}
+
+.list_item {
+    width: 320px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.list_item li {
+    width: 56px;
+    height: 56px;
+    border: 1px solid transparent;
+    float: left;
+    margin: 0 3px;
+}
+
+.list_item li:hover {
+    border-color: #c81623;
+}
+
+.itemInfo_wrap {
+    width: 718px;
+    background-color: skyblue;
+}
