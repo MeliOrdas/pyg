@@ -22,6 +22,7 @@
 }
 
 .preview_list {
+    position: relative;
     margin-top: 60px;
     height: 60px;
     /* background-color: skyblue; */
@@ -41,11 +42,123 @@
     margin: 0 3px;
 }
 
+.list_item li.current {
+    border-color: #c81623;
+}
+
 .list_item li:hover {
     border-color: #c81623;
 }
 
 .itemInfo_wrap {
     width: 718px;
-    background-color: skyblue;
+}
+
+.arrow_prev,
+.arrow_next {
+    position: absolute;
+    top: 15px;
+    width: 22px;
+    height: 32px;
+}
+
+.arrow_prev {
+    left: 0;
+}
+
+.arrow_next {
+    right: 0;
+}
+
+.sku_name {
+    height: 30px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.news {
+    height: 32px;
+    color: #e12228;
+}
+
+.summary dl {
+    overflow: hidden;
+}
+
+.summary dd,
+.summary dt {
+    float: left;
+}
+
+.summary dt {
+    width: 75px;
+    padding-left: 10px;
+    line-height: 36px;
+}
+
+.summary_promotion,
+.summary_price {
+    position: relative;
+    padding: 10px 0;
+    background-color: #fee9eb;
+}
+
+.summary_price a {
+    color: #c8163c;
+}
+
+.price {
+    font-size: 24px;
+    color: #c12228;
+}
+
+.remark {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+
+.summary_promotion dd {
+    width: 450px;
+    line-height: 37px;
+}
+
+.summary_promotion {
+    padding-top: 0;
+}
+
+.summary_promotion em {
+    display: inline-block;
+    height: 22px;
+    width: 60px;
+    background-color: #c81623;
+    color: #fff;
+    line-height: 22px;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.summary_support dd {
+    line-height: 37px;
+}
+
+.summary_distribution dd {
+    font-family: "icomoon";
+    width: 415px;
+    line-height: 37px;
+}
+
+.choose_color button {
+    /* display: inline-block; */
+    width: 78px;
+    height: 38px;
+    background-color: #f7f7f7;
+    border: 1px solid #ededed;
+    /* text-align: center; */
+    line-height: 38px;
+    margin-right: 5px;
+}
+
+.choose_color a:hover {
+    border-color: red;
 }

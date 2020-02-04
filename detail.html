@@ -133,9 +133,11 @@
                     <img src="upload/preview.png" alt="">
                 </div>
                 <div class="preview_list">
+                    <a href="#" class="arrow_prev"><img src="upload/disabled-prev.png" alt=""></a>
+                    <a href="#" class="arrow_next"><img src="upload/disabled-next.png" alt=""></a>
                     <ul class="list_item">
                         <li><img src="upload/pre.png" alt=""></li>
-                        <li><img src="upload/pre.png" alt=""></li>
+                        <li class="current"><img src="upload/pre.png" alt=""></li>
                         <li><img src="upload/pre.png" alt=""></li>
                         <li><img src="upload/pre.png" alt=""></li>
                         <li><img src="upload/pre.png" alt=""></li>
@@ -143,7 +145,58 @@
                 </div>
             </div>
             <!-- 产品详细信息 -->
-            <div class="itemInfo_wrap fr">123</div>
+            <div class="itemInfo_wrap fr">
+                <div class="sku_name">
+                    Apple iphone 6s (A1700)64G玫瑰金色 移动通信电信4G手机
+                </div>
+                <div class="news">推荐选择下方[一定优惠购],手机套餐齐搞定,不换号,每月还有话费返</div>
+                <div class="summary">
+                    <dl class="summary_price">
+                        <dt>价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格</dt>
+                        <dd>
+                            <i class="price">￥1.00</i>
+                            <a href="#">降价通知</a>
+                            <div class="remark">
+                                累计评价612188
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl class="summary_promotion">
+                        <dt>促&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;销</dt>
+                        <dd>
+                            <em>加购价</em>满999.00另外加20.00元,或满1999.00另加30.00元, 或满2999.00另加40.00元,即可在购物车换 购热销商品 详情 》
+                        </dd>
+                    </dl>
+                    <dl class="summary_support">
+                        <dt>促&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;销</dt>
+                        <dt>支持</dt>
+                        <dd>
+                            以旧换新,闲置手机回收 4G套餐超值抢购 礼品购
+                        </dd>
+                    </dl>
+                    <dl class="summary_distribution">
+                        <dt>配&nbsp; 送&nbsp; 至</dt>
+                        <dd>
+                            北京海关  有货&nbsp;&nbsp; 支持&nbsp;&nbsp; 99元免运费&nbsp; |&nbsp; 货到付款 &nbsp;|
+                            &nbsp;211限时达&nbsp;&nbsp;&nbsp; 
+                            由自营发货,并提供售后服务。11:00前完成下单,预计今天<strong>(08月10日) 送达</strong>
+                        </dd>
+                    </dl>
+                    <dl class="choose_color">
+                        <dt>选择颜色</dt>
+                        <dd>
+                            <!-- <a name="xuanze" href="javascript:;" class="current">玫瑰金</a>
+                            <a name="xuanze" href="javascript:;">金色</a>
+                            <a name="xuanze" href="javascript:;">白色</a>
+                            <a name="xuanze" href="javascript:;">土豪色</a> -->
+                            <button class="xuanze">玫瑰金</button>
+                            <button class="xuanze">金色</button>
+                            <button class="xuanze">白色</button>
+                            <button class="xuanze">土豪金</button>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
         </div>
     </div>
     <!-- Mobile detail end -->
@@ -273,6 +326,28 @@
         </div>
     </div>
     <!-- footer end -->
+
+    <script>
+        let btn = document.querySelectorAll("button");
+        let arr = [...btn];
+        let del = arr.slice(1, 5);
+        button(del);
+
+        function button(item) {
+            for (let i = 0; i < item.length; i++) {
+                item[i].index = i;
+                item[i].onclick = function () {
+                    for (let i = 0; i < item.length; i++) {
+                        if (this === item[i]) {
+                            this.style.background = "skyblue";
+                        } else {
+                            item[i].style.background = '';
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>
