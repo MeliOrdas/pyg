@@ -162,3 +162,183 @@
 .choose_color a:hover {
     border-color: red;
 }
+
+.choose_version,
+.choose_type {
+    margin: 10px 0;
+}
+
+.choose_version button,
+.choose_type button,
+.choose_suit button {
+    width: 78px;
+    height: 38px;
+    background-color: #f7f7f7;
+    border: 1px solid #ededed;
+    line-height: 38px;
+    margin-right: 5px;
+}
+
+.choose_button {
+    margin: 20px 0 0 10px;
+}
+
+.choose_amount {
+    float: left;
+    width: 50px;
+    height: 46px;
+    background-color: skyblue;
+    position: relative;
+}
+
+.choose_amount input {
+    width: 33px;
+    height: 44px;
+    border: 1px solid #cccccc;
+    text-align: center;
+}
+
+.plus,
+.subtract {
+    position: absolute;
+    width: 15px;
+    height: 22px;
+    border: 1px solid #cccccc;
+    background-color: #f1f1f1;
+    text-align: center;
+    right: 0;
+}
+
+.plus {
+    top: 0;
+}
+
+.subtract {
+    bottom: 0;
+    cursor: not-allowed;
+}
+
+.choose_car {
+    margin-left: 10px;
+    float: left;
+    width: 142px;
+    height: 46px;
+    background-color: #c81623;
+    text-align: center;
+    line-height: 46px;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.aside {
+    width: 208px;
+    border: 1px solid #ccc;
+}
+
+.product_detail {
+    margin-bottom: 50px;
+}
+
+.tab_list {
+    height: 34px;
+    overflow: hidden;
+}
+
+.tab_list .current {
+    background-color: #ffffff;
+    border-bottom: 0;
+    color: red;
+}
+
+.tab_list li {
+    float: left;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ccc;
+    height: 33px;
+    text-align: center;
+    line-height: 33px;
+}
+
+.tab_first {
+    width: 104px;
+}
+
+.tab_second {
+    border-left: 1px solid #ccc;
+    width: 103px;
+}
+
+.detail {
+    width: 978px;
+    /* border: 1px solid #ccc; */
+}
+
+.tab_con {
+    padding: 0 10px;
+}
+
+.tab_con li {
+    border-bottom: 1px solid #ccc;
+}
+
+.aside_price {
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.tab_con img {
+    margin-top: 15px;
+}
+
+.tab_con .add_car {
+    display: block;
+    width: 88px;
+    height: 26px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+    margin: 10px auto;
+    text-align: center;
+    line-height: 26px;
+}
+
+.tab_con li h5 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: normal;
+}
+
+.detail_tab_list {
+    height: 39px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+
+.detail_tab_list li {
+    float: left;
+    height: 39px;
+    line-height: 39px;
+    padding: 0 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.detail_tab_list .current {
+    background-color: #c81623;
+    color: #fff;
+}
+
+.item_info {
+    padding: 20px 0 0 20px;
+}
+
+.item_info li {
+    line-height: 22px;
+}
+
+.item .more {
+    float: right;
+    font-weight: 700;
+}
